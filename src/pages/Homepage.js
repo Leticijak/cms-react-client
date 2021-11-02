@@ -14,6 +14,8 @@ export default function Homepage() {
           <div className='rating'>{rev.rating}</div>
           <h2> {rev.title} </h2>
 
+          <small>Date: {rev.published_at.slice(0, 10)}</small>
+          <br />
           <small> console list</small>
           <p> {rev.body.substring(0, 200)}... </p>
           <Link to={`/details/${rev.id}`}>Read More</Link>
